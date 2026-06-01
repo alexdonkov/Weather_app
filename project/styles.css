@@ -1,0 +1,161 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: linear-gradient(160deg, #1a5f96 0%, #378add 45%, #74c0e8 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 0.5px solid rgba(255, 255, 255, 0.25);
+  border-radius: 28px;
+  padding: 2rem 1.5rem 2.5rem;
+}
+
+
+
+.search-area {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+#cityInput {
+  flex: 1;
+  padding: 13px 52px 13px 20px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.22);
+  color: #fff;
+  transition: background 0.15s, box-shadow 0.15s;
+}
+
+#cityInput::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#cityInput:focus {
+  background: rgba(255, 255, 255, 0.32);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.4);
+}
+
+#searchButton {
+  position: absolute;
+  right: 6px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.28);
+  color: #fff;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+
+#searchButton:hover {
+  background: rgba(255, 255, 255, 0.42);
+}
+
+
+
+
+.main-weather {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+#weatherIcon {
+  font-size: 72px;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+#temperature {
+  font-size: 80px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+#cityName {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 6px 0 4px;
+}
+
+#weatherDescription {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.detail-card {
+  background: rgba(255, 255, 255, 0.18);
+  border: 0.5px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  padding: 1rem 0.75rem;
+  text-align: center;
+  color: #fff;
+}
+
+.detail-label {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+}
+
+.detail-card strong {
+  font-size: 20px;
+  font-weight: 500;
+  display: block;
+}
+
+
+
+@media (max-width: 420px) {
+  .container {
+    border-radius: 20px;
+    padding: 1.5rem 1rem 2rem;
+  }
+
+  #temperature {
+    font-size: 64px;
+  }
+
+  .detail-card strong {
+    font-size: 17px;
+  }
+}

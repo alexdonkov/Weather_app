@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <section class="search-area">
+      <input type="text" id="cityInput" placeholder="Search city" />
+      <button id="searchButton">🔍</button>
+    </section>
+
+    <div id="infobox">
+
+    <section class="main-weather">
+      <div id="weatherIcon">☀️</div>
+      <h1 id="temperature">24°</h1>
+      <h2 id="cityName">Sofia</h2>
+      <p id="weatherDescription">Sunny • Feels like 26°</p>
+    </section>
+
+    <section class="details">
+      <div class="detail-card">
+        <p>Humidity</p>
+        <h3 id="humidity">48%</h3>
+      </div>
+
+      <div class="detail-card">
+        <p>Wind</p>
+        <h3 id="wind">12 km/h</h3>
+      </div>
+
+      <div class="detail-card">
+        <p>UV Index</p>
+        <h3 id="uvIndex">5</h3>
+      </div>
+    </section>
+
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
