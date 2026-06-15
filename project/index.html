@@ -8,6 +8,8 @@
 </head>
 <body>
 
+  <canvas id="bgCanvas"></canvas>
+
   <div class="container">
 
     <section class="search-area">
@@ -24,40 +26,39 @@
         <p id="weatherDescription">Sunny • Feels like 26°</p>
       </section>
 
-      <!-- Primary stats row (always 3 columns) -->
       <section class="details">
         <div class="detail-card">
           <p class="detail-label">Humidity</p>
           <h3 id="humidity">48%</h3>
         </div>
-
         <div class="detail-card">
           <p class="detail-label">Wind</p>
           <h3 id="wind">12 km/h</h3>
         </div>
-
         <div class="detail-card">
           <p class="detail-label">UV Index</p>
           <h3 id="uvIndex">5</h3>
         </div>
       </section>
 
-      <!-- Secondary stats row (always 3 columns) -->
       <section class="details extra-details">
         <div class="detail-card">
           <p class="detail-label">Sunrise</p>
           <h3 id="sunrise">—</h3>
         </div>
-
         <div class="detail-card">
           <p class="detail-label">Sunset</p>
           <h3 id="sunset">—</h3>
         </div>
-
         <div class="detail-card">
           <p class="detail-label">Precip.</p>
           <h3 id="precipitation">—</h3>
         </div>
+      </section>
+
+      <section class="forecast">
+        <h4 class="forecast-title">5-Day Forecast</h4>
+        <div class="forecast-strip" id="forecastStrip"></div>
       </section>
 
     </div>
