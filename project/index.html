@@ -65,6 +65,10 @@
 
   </div>
 
-  <script src="weather.js"></script>
+  <!-- Load order matters: background.js defines setBackgroundTheme(),
+       weather-api.js defines getWeather(), and main.js calls both. -->
+  <script src="background.js"></script>
+  <script src="weather-api.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
